@@ -13,3 +13,6 @@ venv/
 # Flask-related files
 instance/
 .flaskenv
+
+# locally stored credentials
+creds.json
