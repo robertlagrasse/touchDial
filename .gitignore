@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# PyCharm project files
+.idea/
+
+# Flask-related files
+instance/
+.flaskenv
