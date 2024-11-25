@@ -76,14 +76,20 @@ The Docker image packages your application and all its dependencies for deployme
 Replace the placeholders:
 
 <your-project-id>: Your Google Cloud project ID (e.g., gcptestproject69420).
+
 <your-app-name>: A descriptive name for your app (e.g., twilioapp).
+
 Example:
-bash
-Copy code
+```bash
 gcloud builds submit --tag gcr.io/gcptestproject69420/twilioapp
+````
 What This Does:
-Builds the Docker image: The gcloud builds submit command reads the Dockerfile and packages your app.
+Builds the Docker image: 
+
+The gcloud builds submit command reads the Dockerfile and packages your app.
+
 Uploads the image: The built image is stored in Google Container Registry (GCR) for deployment.
+
 Once the build completes successfully, the image is ready to deploy.
 
 ### 5. Deploy to Cloud Run
@@ -123,7 +129,9 @@ gcloud run deploy twilioapp \
 ```
 
 Key Options Explained:
+
 --allow-unauthenticated: Makes your app accessible without authentication.
+
 --set-env-vars: Passes sensitive Twilio credentials as environment variables.
 
 ### 6. Test Your Deployment
